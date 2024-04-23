@@ -1,0 +1,31 @@
+/*=====NavBar=====*/
+nav{
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(199, 196, 196, 0.216);
+}
+
+/*=====Main=====*/
+
+main{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.write{
+    font-size: 20px;
+    color: rgb(161, 156, 156);
+}
+
+.ParagraphTitle{ 
+    font-size: 25px;
+    font-weight: bold;
+}
