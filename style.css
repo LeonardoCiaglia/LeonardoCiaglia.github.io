@@ -1,6 +1,5 @@
-/*=====Bottone per risalire=====*/
 .scrollToTopBtn {
-    display: none; /*Rende il btn non visibile all'inizio*/
+    display: none; 
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -8,49 +7,75 @@
     background-color: rgba(0, 0, 0, 0.842);
     color: white;
     border: none;
-    border-radius: 20%;
+    border-radius: 50%;
     padding: 10px;
     transition: ease-in-out 0.3s;
-} 
+    z-index: 1000;
+}
 
-/*=====NavBar=====*/
-nav{
-    font-size: 20px;
+button.title {
+  border: none !important;
+  text-align: center !important;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+button.title:hover {
+  box-shadow: none !important;
+}
+
+.collapse {
+  transition: height 0.6s ease; /* più lenta, effetto smooth */
+}
+
+.progress-bar {
+  font-weight: 500;
+  color: white;
+}
+
+
+nav {
+    font-size: 18px;
     background-color: white;
+    padding: 10px 20px;
 }
 
 .navbar-nav .nav-link:hover {
     background-color: rgba(199, 196, 196, 0.216);
 }
 
-/*=====Main=====*/
-
-.title{
-    font-size: 60px;
+.title {
+    font-size: 48px;
     font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
 }
 
-.write{
-    font-size: 25px;
+.write {
+    font-size: 20px;
     color: rgb(161, 156, 156);
-    font-weight:normal;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.ParagraphTitle{ 
-    font-size: 35px;
+.ParagraphTitle { 
+    font-size: 28px;
     font-weight: bold;
 }
 
-.SubParagraphTitle{
-    font-size: 25px;
+.SubParagraphTitle {
+    font-size: 22px;
     font-weight: bold; 
 }
 
-.icon:hover{
+.icon:hover {
     color: rgba(48, 138, 231);
 }
 
-div .progress-bar{
+div .progress-bar {
     background-color: rgba(48, 138, 231);
 }
 
@@ -59,24 +84,84 @@ div .progress-bar{
     transition: border-color 0.3s ease-in-out;
 }
 
-.roundedImg{
+.roundedImg {
     border-radius: 100%; 
-    width: 170px; 
-    height: 170px;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
 }
 
-.shdwImg{
+.shdwImg {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.245);
 }
 
 .education:hover .education-divider {
-    border-color:  rgba(48, 138, 231);
+    border-color: rgba(48, 138, 231);
 }
 
-.card{
+.card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.245);
+    margin: 10px;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.799); 
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .write {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .ParagraphTitle {
+        font-size: 24px;
+    }
+
+    .SubParagraphTitle {
+        font-size: 20px;
+    }
+
+    .roundedImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .scrollToTopBtn {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .ParagraphTitle,
+    .SubParagraphTitle {
+        text-align: center;
+    }
+
+    .roundedImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .write {
+        font-size: 16px;
+    }
+
+    .card {
+        margin: 5px;
+    }
 }
