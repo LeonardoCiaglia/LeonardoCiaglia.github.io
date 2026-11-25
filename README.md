@@ -1,1 +1,0 @@
-# Curriculum di Leonardo Ciaglia
